@@ -2,9 +2,9 @@
 
 if [ -z "$OMARCHY_BARE" ]; then
   yay -S --noconfirm --needed \
-    gnome-calculator gnome-keyring signal-desktop \
+    gnome-keyring signal-desktop \
     obsidian-bin libreoffice obs-studio kdenlive \
-    xournalpp localsend-bin
+    xournalpp
 
   # Packages known to be flaky or having key signing issues are run one-by-one
   for pkg in pinta typora spotify zoom; do
@@ -16,5 +16,7 @@ if [ -z "$OMARCHY_BARE" ]; then
     echo -e "\e[31mFailed to install 1password. Continuing without!\e[0m"
 fi
 
+yay -S --noconfirm --needed \
+    gnome-calculator localsend-bin
 # Copy over Omarchy applications
 source ~/.local/share/omarchy/bin/omarchy-refresh-applications || true
