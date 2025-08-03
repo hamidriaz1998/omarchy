@@ -20,3 +20,9 @@ DefaultDependencies=no
 EOF
 
 sudo systemctl daemon-reload
+
+# Pull required images
+docker pull postgres:latest
+docker pull redis:latest
+docker pull mongodb/mongodb-community-server:latest
+docker pull minio/minio
