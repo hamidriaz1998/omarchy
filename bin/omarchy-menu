@@ -331,8 +331,8 @@ show_system_menu() {
   *Lock*) omarchy-lock-screen ;;
   *Suspend*) systemctl suspend ;;
   *Relaunch*) uwsm stop ;;
-  *Restart*) systemctl reboot ;;
-  *Shutdown*) systemctl poweroff ;;
+  *Restart*) reboot ;;
+  *Shutdown*) shutdown now ;;
   *) show_main_menu ;;
   esac
 }
