@@ -55,6 +55,8 @@ if command -v chromium &>/dev/null; then
   fi
 fi
 
+# Trigger zed config reload
+ln -nsf "$CURRENT_THEME_DIR/zed.json" ~/.config/zed/themes/omarchy-current.json
 # Trigger alacritty config reload
 touch "$HOME/.config/alacritty/alacritty.toml"
 
