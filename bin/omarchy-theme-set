@@ -62,6 +62,9 @@ ln -nsf "$CURRENT_THEME_DIR/zed.json" ~/.config/zed/themes/omarchy-current.json
 # Trigger alacritty config reload
 touch "$HOME/.config/alacritty/alacritty.toml"
 
+# Update vscode theme
+omarchy-theme-set-vscode
+
 # Restart components to apply new theme
 pkill -SIGUSR2 btop
 omarchy-restart-waybar
