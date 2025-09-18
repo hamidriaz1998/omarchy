@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if [[ -z $1 && $1 != "CNCLD" ]]; then
-  echo "Usage: omarchy-theme-set <theme-name>"
-  exit 1
+    echo "Usage: omarchy-theme-set <theme-name>"
+    exit 1
 fi
 
 THEMES_DIR="$HOME/.config/omarchy/themes/"
@@ -13,8 +13,8 @@ THEME_PATH="$THEMES_DIR/$THEME_NAME"
 
 # Check if the theme entered exists
 if [[ ! -d "$THEME_PATH" ]]; then
-  echo "Theme '$THEME_NAME' does not exist in $THEMES_DIR"
-  exit 1
+    echo "Theme '$THEME_NAME' does not exist in $THEMES_DIR"
+    exit 1
 fi
 
 # Update theme symlinks
@@ -36,3 +36,4 @@ omarchy-theme-set-gnome
 omarchy-theme-set-eza
 omarchy-theme-set-browser
 omarchy-theme-set-vscode
+omarchy-theme-set-zed

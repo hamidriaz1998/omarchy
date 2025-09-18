@@ -1,0 +1,2 @@
+# Trigger zed config reload
+ln -nsf "$CURRENT_THEME_DIR/zed.json" ~/.config/zed/themes/omarchy-current.json
